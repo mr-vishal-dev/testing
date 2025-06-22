@@ -15,7 +15,9 @@
             .then(permission =>{
                 if(permission=="granted")
             {
-                new Notification("welcome");
+                new Notification("welcome",
+                                 {body:"hello ${inputt.value}"}
+                                );
             }
         })
     }
